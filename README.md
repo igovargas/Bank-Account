@@ -1,18 +1,56 @@
-## Getting Started
+# Bank Account
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a simple Java project developed in VScode with the goal of practicing object-oriented concepts such as inheritance, abstraction, and package organization.
 
-## Folder Structure
+## Project Structure
 
-The workspace contains two folders by default, where:
+src/
+── interfaces/
+  ── Entity.java
+  ── CorporateEntity.java
+    ── Individual.java
+── services/
+    ── EntityService.java
+── BankAccount.java
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Create a corporate entity (CNPJ)
+- Create an individual entity (CPF)
+- Display information on the console
+- Organized into packages: `interfaces` for entities and `services` for logic
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Technologies
 
-## Dependency Management
+- Java (JDK 17+ recommended)
+- VScode (with Java extensions)
+- Terminal (or prompt) for compilation and execution
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/igovargas/Bank-Account.git
+cd Bank-Account
+```
+
+2. Complie the files:
+ 
+```bash
+javac -d bin src/**/*.java
+```
+
+3. Run the program:
+
+```bash
+java -cp bin BankAccount
+```
+
+## .gitignore
+
+The project uses .gitignore to prevent versioning of the build folder (/bin) and .class files.
+
+## Objective
+
+This project is being developed for educational purposes, as part of practical progress in object-oriented Java programming.
